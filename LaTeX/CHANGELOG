@@ -1,0 +1,126 @@
+Version 2.5 (released 2009-11-30)
+   * Fixed ToC error showing the wrong page numbers (the last page instead of the first one).
+
+Version 2.4 (released 2009-11-20)
+   * Checked with faculty and confirmed several bugs in ToC. Fixed all of them.
+     * Fixed bolded and all capital "Apendices" (Lampiran in BM).
+     * Fixed "Appendix No." into just "Appendix" in Appendix table.
+     * Removed Cooperation declaration form.
+     * Inserted two pages to remind students of additional form to include in final thesis:
+       - an "Insert Cooperation declaration form here" page.
+       - an "Insert PSZ 19:16 form here" page.
+   * This version is now officially compliant with UTM thesis formatting.
+
+Version 2.3 (released 2009-10-14)
+   * Bugfixes :
+     * Fixed issue with main chapter name too long messing up the ToC.
+     * Fixed chapter\title page number to close to each other in ToC.
+     * Fixed Appendix sections have no numbering. Now it is no longer needed to use
+       \section* anymore for appendices.
+     * Removed page numbering for first page of referencing & appendix.
+     * Section indentation fixed to be the same as paragraph indent.
+     * Fixed figure/tables caption separation.
+   * Added list of algorithms (optional)
+
+
+Version 2.2 (released 2009-08-07)
+Not so major updates :
+  * Font set to Times.
+  * Forcing Uppercase for Chapter titles and such.
+  * Spacing in list of figures and list of tables.
+  * The Appendix margin (thesis manual 2007 is confusing).
+  * Title page thesis type (laporan, tesis, dissertation, and such.
+  * Degree type (master/phd by course/research).
+  * Declaration type.
+  * Typsetting ToC for correct appendices entries.
+  * Added better thesis sample (easier to understand).
+  * Added \endmatter - put this just before \end{document}
+  * Updated/revised included sample thesis.
+  * Changed sample.tex to thesis.tex for no reason :)
+  * Removed unnecesary folders (tests) and files (build.xml) in the
+    final build that confuses new users.
+  * Fixed typos in the README file.
+
+
+Version 2.1 (released 2009-01-11)
+This version is a minor update, added support for thesis written in Malay:
+  * added 'malay', 'english' class option; Default to 'english'.
+  * auto-switch Abstract and Abstrak pages according to thesis language.
+  * auto-adjust \numberline{} width for 'part' entry according to thesis
+  language.
+
+
+Version 2.0 (released 2009-01-01)
+This version is a major rework. The following features/fixes were added:
+  * renamed `UTM.cls' to 'utmthesis.cls' (follows LaTeX class naming convention)
+  * reduced package dependency to 2 packages: parskip, setspace
+  * auto generate spacing between paragraphs (fixed issue 1)
+  * reuse \chapter (replace \addappendix) to add appendix title (fixed issue 2)
+  * \chapter no longer converts chapter title into UPPERCASE
+  * BibTeX support:
+    * support `natbib` package to format References page according to UTM format
+    * added `utmthesis-authordate.bst' - format BibTeX to UTM author-date system
+    * added `utmthesis-numbering.bst' - format BibTeX to UTM number system
+    * added `test/bibtex/' directory to collect BibTeX entry examples
+  * support `hyperref' package to auto generate PDF inter-page links/bookmarks
+  * support `acronym' package to generate List of Symbols/Abbreviations page
+  * use 3 content dividers: \frontmatter, \mainmatter and \appendix; 
+  they should be used in the following order:
+    # \coverpage
+    # \superpage
+    # \certification
+    # *\frontmatter*
+    # .. other preliminary pages
+    # *\mainmatter*
+    # .. chapters
+    # .. references
+    # *\appendix*
+    # .. appendices
+  * added `draft' class option that inherited from book.cls, i.e.
+  \documentclass[draft]{utmthesis}
+  * added optional command \preliminary[dir] to insert preliminary pages 
+  in the correct order
+  * show LaTeX warning messages when any preamble variable 
+  (e.g. \title, \date, \award, \superone etc.) is not set
+  * added `sample.tex' and sample files to generate a UTM thesis sample
+  * added `build.xml' Apache Ant build file with 2 clean up commands:
+    * ant clean - remove LaTeX/BibTeX generated files except generated PDFs
+    * ant clean-all - remove all generated files including sample.pdf and
+    all *.pdf under test/ directory.
+
+
+Changes in Version 1.1:
+  1. Page number in supervisor's declaration page was removed.
+  2. Spacing after a figure/table was removed.
+  3. Adjustments were made to \baselineskip spacing.
+  4. List of Abbreviations was added.
+  5. Spacing for each new chapter-level entries in Table of Contents were added.
+  6. Spacing between headings and text were adjusted.
+  7. Labels for tables and figures were bold.
+  8. Indentation for sections and subsections headings was corrected.
+  9. Hyphenations were significantly reduced.
+
+
+Changes in Version 1.0.3:
+  1. Two bugs were identified in regards to the Appendix:
+     a. Bug: When referring to a an appendix in the text, 
+        the word "APPENDIX" appears.
+        Status: Solved. 
+     b. Bug: The list of appendices (LOA) does not adjust the page number 
+        correctly when the appendix title is too long.
+     Status: Unable to solve.
+  2. In TOC, a main "APPENDIX" chapter label is added upon calling \appendix
+  3. All subsequent \addappendix entry does not contain the word "APPENDIX" 
+     in the label
+
+
+Changes in Version 1.0.2:
+  1. Bug in Supervisor Declaration Page. 
+     Bug: Possesive Suffix Mistake. 
+     Status: Solved. "I" changed to "my" and "We" changed to "our", 
+             where necessary.
+
+
+Changes in Version 1.0.1:
+  1. Spelling of "Technology" change to "Teknologi"
+  2. Extra page between last page of text and Appendix removed.

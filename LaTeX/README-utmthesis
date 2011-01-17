@@ -1,0 +1,225 @@
+Utmthesis Project
+=============================
+
+The Utmthesis Project provides a LaTeX class and BibTeX styles (for both authordate
+and number citation styles) to typeset your thesis according to the Universiti
+Teknologi Malaysia (UTM) thesis formatting rules.
+
+This project is a free software project licensed under the New BSD License. See
+licensing details in the LICENSE file.
+
+
+Core Features in this version
+=============================
+
+Version 2.5 (released 2009-11-30) contains a minor bugfix.
+  * Fixed ToC error showing the wrong page numbers (the last page instead of the first one).
+
+Previous fixes for version 2.4 :
+  * Checked with faculty and confirmed several bugs in ToC. Fixed all of them.
+     * Fixed bolded and all capital "Apendices" (Lampiran in BM).
+     * Fixed "Appendix No." into just "Appendix" in Appendix table.
+     * Removed Cooperation declaration form.
+     * Inserted two pages to remind students of additional form to include in final thesis:
+       - an "Insert Cooperation declaration form here" page.
+       - an "Insert PSZ 19:16 form here" page.
+  * This version is now officially compliant with UTM thesis formatting.
+
+The core features include:
+  * Support thesis written in Malay.
+  * Conform closely to formatting requirements in UTM Thesis Manual (July 2007).
+  * Minimal package dependency (required packages: parskip, setspace, acronym, times).
+  * Support BibTeX users.
+    * Provide BibTeX styles for both UTM authordate and number citation systems.
+    * Support natbib package.
+    * More BibTeX entry examples in tests/bibtex/ directory.
+    * Finally, no more referencing headaches.
+  * Support hyperref package to generate inter-page links/bookmarks in PDF.
+  * Support acronym package to generate List of Symbols/Abbreviations page.
+  * Include a thesis sample for new users.
+  * Added and optional list of algorithms.
+
+Who is working on this project?
+================================
+
+This project is contributed by a team of UTM citizens, individuals, and lecturers
+who are interested in LaTeX thesis writing, dedicated to improving UTM students
+life quality by eliminating the daunting thesis formatting nightmares once
+and for all.
+
+Their names are honorably listed in CREDITS file.
+
+
+Distribution File Structure
+============================
+
+ utmthesis/
+   |- utmthesis.cls             UTM thesis LaTeX class 
+   |- utmthesis-authordate.bst  UTM BibTeX style (authordate)
+   |- utmthesis-numbering.bst   UTM BibTeX style (numbering)
+   |
+   |- thesis.tex                thesis sample TeX source file
+   |- source/                   thesis sample associated files
+   |- thesis.pdf                pre-generated thesis sample in PDF
+   |
+   |- CHANGELOG                 detailed changes in each release
+   |- CREDITS                   contribution credits
+   |- LICENSE                   licensing info
+   `- README                    general project info (this file)
+
+
+Getting Started
+============================
+
+New to LaTeX
+----------------
+  Find out what is LaTeX, how to setup your computer to run LaTeX, 
+  and how to write your first LaTeX document at 
+  
+    http://www.latex-project.org/
+
+New to utmthesis
+-----------------
+  Open thesis.tex with your favourite LaTeX editor and compile it to PDF.
+  
+  When done, spend some time to read the generated thesis.pdf, then read the 
+  thesis.tex source file and the associated .tex files.
+  
+  A complete list of utmthesis commands is listed at the end of this
+  README file. They are used throughout the sample source files.
+
+Join us
+----------------
+  We welcome contributions of all kinds, you can start dropping questions
+  and feedback to our mailing list
+  
+    http://groups.google.com/group/utmthesis-discuss
+  
+  Submit issues, patches or feature requests to "Issues" page at
+
+    http://utmthesis.googlecode.com/
+  
+  To anonymously check out the latest project source code
+
+    svn checkout http://utmthesis.googlecode.com/svn/trunk/ utmthesis-read-only 
+  
+  Help us to spread the news, and make this project better! We appreciate
+  any feedback you may have.
+
+
+Complete List of utmthesis.cls Commands
+=========================================
+
+  # utmthesis class options:
+    * final, draft   - shows any overfull boxes if draft option requested;
+                       default: final
+                       (this option is delegated directly to book.cls)                  
+    * malay, english - switch preliminary pages, titles, caption labels etc 
+                       to either Malay or English; default: english.
+  
+  # Preamble variables  ( set them before \begin{document} )
+    * \title        - thesis title (Title Case) 
+    * \author       - author full name (Title Case)
+    * \date         - signature date in supervisor/author declaration
+                      (Title Case) if not set, default value is \today
+    * \degree       - degree name (Title Case) e.g. Master of Science 
+    * \faculty      - faculty name (Title Case) e.g. Faculty of Science
+    * \titledate    - publication date (MONTH YYYY) on cover page (UPPERCASE) 
+                      e.g. JANUARY 2009
+    * \award        - award statement option (value: 1-6)
+                        1. Bachelor Degree Project Report
+                        2. Master's Project Report (By course work)
+                        3. Master's Dissertation (By course work and research)
+                        4. Master's Thesis (By research)
+                        5. Doctor of Philosophy Thesis
+                        6. Engineering Doctorate Thesis 
+    * \superone     - main supervisor full name (Title Case)
+    * \supertwo     - 2nd supervisor full name (Title Case) if any
+    * \superthree   - 3rd supervisor full name (Title Case) if any
+  
+  # Content structures  ( outline thesis structure )
+    * \frontmatter         - page-numbered preliminary pages start here 
+    * \mainmatter          - main chapters start here
+    * \endmatter           - put this just before \end{document}
+    * \appendix            - appendices start here
+    * \part                - new part (e.g. Part II)
+    * \chapter             - new main chapter (e.g. Chapter 1)
+                             OR new appendix title (e.g. Appendix A)
+    * \section             - new section (1.2)
+    * \subsection          - new subsection (1.2.1)
+    * \subsubsection       - new subsubsection (1.2.1.3)
+    
+  # Preliminary pages  ( add them before \mainmatter )
+  (Environments)
+    * dedication         - dedication text
+    * acknowledgement    - acknowledgement text
+    * abstract           - abstract text
+    * abstrak            - abstract text (in malay)
+  (Commands)
+    * \coverpage         - cover page
+    * \superpage         - supervisor declaration
+    * \certification     - cooperation declaration
+    * \maketitle         - title page
+    * \declaration       - author declaration
+    * \tableofcontents   - table of contents
+    * \listoftables      - list of tables
+    * \listoffigures     - list of figures
+    * \listofsymbols     - list of symbols
+    * \listofabbre       - list of abbreviations
+    * \listofappendices  - list of appendices
+    * \listofalgorithms  - list of algorithms
+    
+    * \addsymbol{symbol}{description}  - renders a List of Symbols entry
+    * \addabbre{abbre}{description}    - renders a List of Abbreviations entry
+  
+    * \preliminary[dir]  - add preliminary pages in correct order
+    
+      [dir] option tells LaTeX which directory (default: current directory)
+      to look for certain preliminary page .tex source files.
+      
+      Calling \preliminary[pre] is equivalent to calling the following
+      commands in order:
+        \coverpage
+        \superpage
+        \certification
+        \frontmatter
+        \maketitle
+        \declaration
+        \include{pre/dedication}       % include dedication environment
+        \include{pre/acknowledgement}  % include acknowledgement environment 
+        \include{pre/abstract}         % include abstract environment          
+        \include{pre/abstrak}          % include abstrak environment
+        \tableofcontents
+        \listoftables
+        \listoffigures
+        \include{pre/abbreviations}    % include \listofabbre followed by
+                                         acronym environment or \addabbre's
+        \include{pre/symbols}          % include \listofsymbols followed by
+                                         acronym environment or \addsymbol's
+        \include{pre/listofappendices} % include \listofappendices
+
+
+Known Issues
+=============
+1. Sometimes, the Bibtex referencing takes the first instance from referencing
+   figures in the ToC. This will result in the first reference number to be greater
+   than [1] in Chapter 1.
+        Solution: Before running Bibtex, comment \mainmatter and \preliminary{}.
+		          Then run Bibtex and Latex. Then uncomment it and run Latex twice.
+
+2. Itemize/enumerate/description indentation is off. This is a minor issue.
+        Solution: Insert [leftmargin=1in] when using these commands.
+              Eg: \begin{itemize}[leftmargin=1in]
+                  .....
+                  .....
+                  \end{itemize}
+
+3. List of abbreviation does not arrange itself alphabetically. You must do this
+   manually.
+
+
+--
+Enjoy!
+
+  - Utmthesis Project Team (2009-08-07)
+

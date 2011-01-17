@@ -1,0 +1,80 @@
+\documentclass[english]{utmthesis}
+%options [english, malay, final, draft]
+
+
+%define whatever packages here
+\usepackage{graphicx, cite, url, subfigure, longtable, enumerate, setspace,amsmath, listings, color}
+
+
+
+%thesis info
+\title{The Thesis Title}                    %thesis/dissertation/project report/repot title
+\author{The Author}                         %The author
+\degree{Your Degree}                        %The official degree title, e.g., Bachelor in Electrical Engineerig
+\faculty{Faculty of Whatever}               %The faculty
+\titledate{October 2008}                    %Month submitted
+\award{2}                                   %1. Bachelor Degree Project Report
+                                            %2. Master's Project Report (By course work)
+                                            %3. Master's Dissertation (By course work and research)
+                                            %4. Master's Thesis (By research)
+                                            %5. Doctor of Philosophy Thesis
+                                            %6. Engineering Doctorate Thesis
+\superone{My Supervisor}                    %Your supervisor. Uncomment below if to add more supervisors.
+                                            %\supertwo{My Co}
+                                            %\superthree{My Another Co}
+
+
+
+\begin{document}
+
+%All the prelim pages and such
+\preliminary[source/pre]                    %[sample/pre/] is the folder where your tex files are]
+                                            %Alternatively, you could manually define which pages to invoke
+                                            %\preliminary[pre] is equivalent to:
+                                            %\coverpage
+                                            %\superpage
+                                            %\certification
+                                            %\frontmatter
+                                            %\maketitle
+                                            %\declaration
+                                            %\include{source/pre/dedication}
+                                            %\include{source/pre/acknowledgement}
+                                            %\include{source/pre/abstract}
+                                            %\include{source/pre/abstrak}
+                                            %\tableofcontents%
+                                            %\listoftables%
+                                            %\listoffigures%
+                                            %\include{source/pre/abbreviations}
+                                            %\include{source/pre/symbols}
+                                            %\include{source/pre/listofappendices}
+
+
+%the main chapters start here.
+\mainmatter
+%include main chapters. You could use \include here
+\input source/main/chap1.tex
+\input source/main/chap2.tex
+\input source/main/chap3.tex
+\input source/main/chap4.tex
+\input source/main/chap5.tex
+\input source/main/chap6.tex
+\input source/main/chap7.tex
+
+
+
+%these lines define the bibliography
+\bibliographystyle{utmthesis-numbering}     %If to use name-year citation, use utmthesis-authordate, else utmthesis-numbering
+\bibliography{source/bib/reference}         %where your bib file is
+
+
+
+%%Comment all lines below (and \include{source/pre/listofappendices} above) when has no appendices
+\appendix
+%I tried \include but it doesn't work. \input will.
+\input source/appendices/app1.tex
+\input source/appendices/app2.tex
+%The line below is to make sure correct ToC line for appendices.
+\endmatter
+
+
+\end{document}

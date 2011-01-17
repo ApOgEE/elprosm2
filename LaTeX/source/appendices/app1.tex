@@ -1,0 +1,27 @@
+\chapter{Appendix A Title}%\label{a3}%
+
+%use \section*{}, \subsection*{} and \subsubsection*{} to exclude ToC entries
+
+This is a sample Appendix illustrating how source code code be added
+in an appendix.
+
+\section{Standard Hello World (hello\_world.c)}
+
+{\footnotesize\renewcommand{\baselinestretch}{1.0}
+\begin{verbatim}
+#include <stdio.h>
+
+int main(void) {
+   printf ("Hello World\n");
+
+   return 0;
+} /* main */
+\end{verbatim}}
+
+\begin{figure}
+    \centering{
+    \includegraphics[width=0.9\textwidth]{source/fig/header.eps}}
+    \caption[Structure of TCP/IP headers]{Structure of TCP/IP headers used for host
+    routing and byte stream reconstruction.}
+    \label{c2:f1}
+\end{figure}
