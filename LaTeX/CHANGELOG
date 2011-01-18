@@ -6,4 +6,8 @@
 	  perlu cari cara menyelesaikan masalah ini pula.
 	- update baru hari ni... aku dah berjaya selesaikan masalah algorithm.sty dengan memasang texlive-science
 	    $ sudo apt-get install texlive-science
-
+	- Yeay! aku dah berjaya juga kompil banyak kali dan semuanya kelihatan OK. Sekarang ni aku perlu
+	  selesaikan masalah fail .eps
+	    ! LaTeX Error: Unknown graphics extension: .eps.
+	- Menurut beberapa post kat internet, ia berkaitan pdflatex tak support eps. Oleh itu, aku boleh gunakan
+	  LaTeX + dvips kalau nak guna EPS. kalau tak, aku kena tukar grafik kepada JPG, PNG, atau imej PDF.
