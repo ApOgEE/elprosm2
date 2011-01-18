@@ -1,0 +1,6 @@
+18 January 2011
+	- baru berjaya selesaikan masalah acronym.sty dengan memasang beberapa pakej. Sila rujuk NOTA_KOMPIL
+	  bahagian 'Pra Kompilasi' 2 & 3.
+	- Jumpa masalah baru iaitu algorithm.sty:
+	    ! LaTeX Error: File `algorithm.sty' not found.
+	  perlu cari cara menyelesaikan masalah ini pula.
