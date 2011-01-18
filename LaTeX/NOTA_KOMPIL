@@ -29,6 +29,13 @@ Berikut adalah pakej yang saya pasang pada Ubuntu 10.04 untuk mengkompil psm2-aw
 
    $ sudo apt-get install texlive
 
+3. texlive-latex3, texlive-latex-extra
+
+   # nota: saya dapati dengan memasang dua pakej ini, masalah pertama telah dapat diselesaikan.
+
+   $ sudo apt-get install texlive-latex3 texlive-latex-extra
+
+
 
 Cara Mengkompil
 ---------------
@@ -52,3 +59,4 @@ ralat pertama dalam kompilasi pertama saya yang perlu ditangani.
 saya kurang pasti kenapa ralat ini timbul dan masih mencari cara menyelesaikannya.
 
  @ Nota: Rujuk Pra Kompilasi #2
+
