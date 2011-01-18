@@ -1,0 +1,43 @@
+Pengarang: M. Fauzilkamil Zainuddin <jerungkun@gmail.com>
+Keterangan: Ini adalah nota bagaimana saya mengkompil kod sumber tesis ini kepada PDF.
+
+Pendahuluan
+-----------
+Saya merujuk kepada nota dalam wiki utmthesis di: http://code.google.com/p/utmthesis/
+
+Tujuan nota ini dibuat adalah sebagai rujukan saya dan sesiapa sahaja yang berminat untuk mengkompil tesis
+yang berasaskan utmtesis dengan menggunakan sistem sama seperti yang saya miliki. Sistem Operasi yang saya 
+gunakan untuk mengkompil tesis ini ialah Ubuntu 10.04 dan saya cuba mengkompil tesis ini menggunakan konsol 
+terminal.
+
+Setakat ini, saya masih belum berjaya mengkompilnya lagi kerana terdapat banyak keperluan pra kompilasi
+yang belum saya penuhi dalam sistem saya ini.
+
+
+Pra Kompilasi
+-------------
+Berikut adalah pakej yang saya pasang pada Ubuntu 10.04 untuk mengkompil psm2-awustel.tex kepada fail PDF:
+
+1. texlive-latex-base
+
+   $ sudo apt-get install texlive-latex-base
+
+
+Cara Mengkompil
+---------------
+Untuk mengkompil psm2-awustel.tex kepada PDF, saya menggunakan arahan berikut:
+
+   $ pdflatex psm2-awustel.tex
+
+
+Hasil Kompilasi
+---------------
+Hasil yang saya perolehi pada kompilasi pertama ini, terdapat banyak ralat dalam LaTeX yang timbul. Oleh itu,
+saya masih belum berjaya mengkompilnya dengan sempurna lagi. Saya harus menangani setiap ralat satu persatu
+supaya dapat mengkompil tesis ini dengan sempurna.
+
+ralat pertama dalam kompilasi pertama saya yang perlu ditangani.
+   
+   ! LaTeX Error: File `acronym.sty' not found.
+
+saya kurang pasti kenapa ralat ini timbul dan masih mencari cara menyelesaikannya.
