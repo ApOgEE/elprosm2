@@ -22,12 +22,21 @@ Berikut adalah pakej yang saya pasang pada Ubuntu 10.04 untuk mengkompil psm2-aw
 
    $ sudo apt-get install texlive-latex-base
 
+2. texlive
+
+   # nota: cubaan kedua, saya install texlive dan perlu memuat turun lebih kurang
+   #       202MB dari repo... streamyx yang perlahan menyebabkan saya bosan dan pegi buat kerja lain dulu.
+
+   $ sudo apt-get install texlive
+
 
 Cara Mengkompil
 ---------------
 Untuk mengkompil psm2-awustel.tex kepada PDF, saya menggunakan arahan berikut:
 
    $ pdflatex psm2-awustel.tex
+
+* Nota kaki: kalau ada ralat, taip 'X' dan keluar je. selesaikan ralat itu dulu dan sambung kemudian.
 
 
 Hasil Kompilasi
@@ -41,3 +50,5 @@ ralat pertama dalam kompilasi pertama saya yang perlu ditangani.
    ! LaTeX Error: File `acronym.sty' not found.
 
 saya kurang pasti kenapa ralat ini timbul dan masih mencari cara menyelesaikannya.
+
+ @ Nota: Rujuk Pra Kompilasi #2
