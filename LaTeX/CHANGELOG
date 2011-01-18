@@ -4,3 +4,6 @@
 	- Jumpa masalah baru iaitu algorithm.sty:
 	    ! LaTeX Error: File `algorithm.sty' not found.
 	  perlu cari cara menyelesaikan masalah ini pula.
+	- update baru hari ni... aku dah berjaya selesaikan masalah algorithm.sty dengan memasang texlive-science
+	    $ sudo apt-get install texlive-science
+

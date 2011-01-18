@@ -40,7 +40,33 @@ sub kompil {
 sub cuci {
 	kepala();
 	print "Mari kita membuang sampah...\n\n";
-	system('rm -fv psm2-awustel.log');
+	system('rm -fv psm2-awustel.log \
+		psm2-awustel.aux psm2-awustel.loabbre psm2-awustel.loapp psm2-awustel.lof \
+		psm2-awustel.los psm2-awustel.lot psm2-awustel.toc source/pre/abbreviations.aux \
+		source/pre/abstract.aux source/pre/abstrak.aux source/pre/acknowledgement.aux \
+		source/pre/dedication.aux source/pre/listofappendices.aux source/pre/symbols.aux');
+
+	# fail PDF output ni boleh komen kalau taknak buang
+	system('rm -fv psm2-awustel.pdf');	
+
+	# kita membuang...
+	#	psm2-awustel.aux
+	#	psm2-awustel.loabbre
+	#	psm2-awustel.loapp
+	#	psm2-awustel.lof
+	#	psm2-awustel.log
+	#	psm2-awustel.los
+	#	psm2-awustel.lot
+	#	psm2-awustel.pdf
+	#	psm2-awustel.toc
+	#	source/pre/abbreviations.aux
+	#	source/pre/abstract.aux
+	#	source/pre/abstrak.aux
+	#	source/pre/acknowledgement.aux
+	#	source/pre/dedication.aux
+	#	source/pre/listofappendices.aux
+	#	source/pre/symbols.aux
+
 }
 
 sub cara {
