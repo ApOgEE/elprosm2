@@ -34,14 +34,17 @@ sub kepala {
 sub kompil {
 	kepala();
 	print "Mari kita mengkompil tesis!\n\n";	
+	system('pdflatex psm2-awustel.tex');
 }
 
 sub cuci {
 	kepala();
 	print "Mari kita membuang sampah...\n\n";
+	system('rm -fv psm2-awustel.log');
 }
 
 sub cara {
+	kepala();
 	print "/!\\ Setakat ni, ada dua cara je nak guna skrip ni... jangan buat pasal!\n\n";
 	print " Cara mengkompil PDF:\n";
 	print "    \$ ./kompiltesis.pl kompil\n\n";
