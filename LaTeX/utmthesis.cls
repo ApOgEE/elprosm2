@@ -921,7 +921,7 @@
 \newcommand{\awardphrase@masterresearch@ms}       {Tesis ini dikemukakan sebagai memenuhi}
 \newcommand{\awardphrase@phd@ms}                  {Tesis ini dikemukakan sebagai memenuhi}
 \newcommand{\awardphrase@msgdoc@ms}               {Disertasi ini dikemukakan\\ sebagai memenuhi sebahagian daripada}
-\newcommand{\@awardphrasetwo@ms}                  {syarat penganugerahan ijazah}
+\newcommand{\@awardphrasetwo@ms}                  {syarat penganugerahan Ijazah}
 % --
 \newcommand{\awardphrase@degree}              {\getstring{awardphrase@degree}}
 \newcommand{\awardphrase@mastercourse}        {\getstring{awardphrase@mastercourse}}
@@ -1139,7 +1139,7 @@
   \fi
   ``\@addressone\space akui bahawa \MakeLowercase{\@addresstwo}\space telah membaca \@degreetype~ini
   dan pada pandangan \@addressthree\space \@degreetype~ini adalah memadai dari segi
-  skop dan kualiti untuk tujuan penganugerahan ijazah \@degree''}
+  skop dan kualiti untuk tujuan penganugerahan Ijazah \@degree''}
 % --
 \newcommand{\pronouns@me@subject}           {\getstring{pronouns@me@subject}}
 \newcommand{\pronouns@me@possessive}        {\getstring{pronouns@me@possessive}}
