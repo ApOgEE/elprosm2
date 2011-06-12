@@ -10,8 +10,20 @@ Aku bagi dia nickname AWUSTeL. Amacam, sedap tak?
 
 Doakan ajelah aku dapat A+ untuk subjek ni. heheh
 
-Cara nak setup kat Ubuntu
+
+
+Cara nak setup LaTeX kat Ubuntu
 -------------------------
 
 install latex tools...
 $ sudo apt-get install texmaker texlive-full jabref
+
+guna texmaker, buka psm2-awustel.tex
+
+masa kompil, buat ini...
+LaTeX (tools > LaTeX atau F2)
+LaTeX (tools > LaTeX atau F2)
+BibTex (tools > BibTex atau F11)
+LaTeX (tools > LaTeX atau F2)
+LaTeX (tools > LaTeX atau F2)
+lepas tu baru Quick Build
