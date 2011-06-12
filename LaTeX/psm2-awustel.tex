@@ -52,6 +52,7 @@
 
 %the main chapters start here.
 \mainmatter
+
 %include main chapters. You could use \include here
 \input source/main/chap1.tex
 \input source/main/chap2.tex
@@ -61,11 +62,10 @@
 \input source/main/chap6.tex
 \input source/main/chap7.tex
 
-
-
 %these lines define the bibliography
 \bibliographystyle{utmthesis-numbering}     %If to use name-year citation, use utmthesis-authordate, else utmthesis-numbering
 \bibliography{source/bib/reference}         %where your bib file is
+%\nocite{*}
 
 %%Comment all lines below (and \include{source/pre/listofappendices} above) when has no appendices
 \appendix

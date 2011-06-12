@@ -4,7 +4,7 @@
 pdf:
 	@echo "Mengkompil Laporan PSM2 ke PDF"
 	latex psm2-awustel.tex
-	bibtex psm2-awustel.tex
+	bibtex psm2-awustel.aux
 	latex psm2-awustel.tex
 	latex psm2-awustel.tex
 	dvips psm2-awustel.dvi -o psm2-awustel.ps
