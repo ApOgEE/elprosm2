@@ -4,8 +4,10 @@
 pdf:
 	@echo "Mengkompil Laporan PSM2 ke PDF"
 	latex psm2-awustel.tex
+	bibtex psm2-awustel.tex
 	latex psm2-awustel.tex
-	dvips psm2-awustel -o psm2-awustel.ps
+	latex psm2-awustel.tex
+	dvips psm2-awustel.dvi -o psm2-awustel.ps
 	ps2pdf psm2-awustel.ps
 
 cuci:
@@ -20,6 +22,8 @@ cuci:
 	rm -f psm2-awustel.lot
 	rm -f psm2-awustel.ps
 	rm -f psm2-awustel.toc
+	rm -f psm2-awustel.bbl
+	rm -f psm2-awustel.blg
 	rm -f source/pre/abbreviations.aux
 	rm -f source/pre/abstract.aux
 	rm -f source/pre/abstrak.aux
@@ -41,6 +45,8 @@ cucihabis:
 	rm -f psm2-awustel.pdf
 	rm -f psm2-awustel.ps
 	rm -f psm2-awustel.toc
+	rm -f psm2-awustel.bbl
+	rm -f psm2-awustel.blg
 	rm -f source/pre/abbreviations.aux
 	rm -f source/pre/abstract.aux
 	rm -f source/pre/abstrak.aux
