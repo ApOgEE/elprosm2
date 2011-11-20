@@ -4,8 +4,7 @@
 
 %define whatever packages here
 \usepackage{graphicx, cite, url, subfigure, longtable, enumerate, setspace,amsmath, listings, color}
-
-
+\renewcommand{\lstlistingname}{Senarai}
 
 %thesis info
 \title{Pembangunan Antaramuka Pengguna Bergrafik Untuk Mengautomasikan Konfigurasi Bagi Sistem Terbenam Linux}      %thesis/dissertation/project report/repot title
@@ -54,13 +53,13 @@
 \mainmatter
 
 %include main chapters. You could use \include here
-\input source/main/chap1.tex
-\input source/main/chap2.tex
-\input source/main/chap3.tex
-\input source/main/chap4.tex
-\input source/main/chap5.tex
-\input source/main/chap6.tex
-\input source/main/chap7.tex
+\input source/main/001-pengenalan.tex
+\input source/main/002-kajian-literatur.tex
+\input source/main/003-metodologi.tex
+\input source/main/004-rekabentuk.tex
+\input source/main/005-implementasi.tex
+\input source/main/006-pengujian.tex
+\input source/main/007-kesimpulan.tex
 
 %these lines define the bibliography
 \bibliographystyle{utmthesis-numbering}     %If to use name-year citation, use utmthesis-authordate, else utmthesis-numbering
@@ -70,8 +69,8 @@
 %%Comment all lines below (and \include{source/pre/listofappendices} above) when has no appendices
 \appendix
 %I tried \include but it doesn't work. \input will.
-\input source/appendices/app1.tex
-\input source/appendices/app2.tex
+\input source/appendices/lampiran1.tex
+\input source/appendices/lampiran2.tex
 %The line below is to make sure correct ToC line for appendices.
 \endmatter
 
