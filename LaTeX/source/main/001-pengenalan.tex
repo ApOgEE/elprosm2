@@ -3,43 +3,92 @@
 \section{Pengenalan}
 Projek \textbf{"Pembangunan Antaramuka Pengguna Bergrafik Untuk Mengautomasikan Konfigurasi Bagi Sistem Terbenam Linux ini"} ini dilakukan bagi memenuhi kehendak subjek Projek Sarjana Muda II (PSM II) yang menjadi salah satu subjek dalam kursus Ijazah Sarjana Muda Sains Komuputer di Universiti Teknologi Malaysia. Projek ini merupakan kesinambungan dari kajian yang dijalankan dalam Projek Sarjana Muda I yang telah dilakukan sebelum ini.
 
-Sistem terbenam linux ialah sejenis sistem yang biasanya digunakan untuk melakukan tugas-tugas khas yang tertentu. Keperluan dan permintaan kepada sistem kecil dan terbenam ini semakin bertambah dengan peningkatan penggunaan sistem automasi berkomputer yang dapat menggantikan sistem manual bagi memudahkan kerja-kerja rutin harian dan menggantikan kerja-kerja yang selama ini dilakukan oleh manusia atau mesin manual. 
+Sistem Terbenam Linux ialah sejenis sistem yang biasanya digunakan untuk melakukan tugas-tugas khusus. Keperluan dan permintaan kepada sistem padat dan terbenam ini semakin bertambah dengan meningkatnya penggunaan sistem automasi berkomputer untuk menggantikan sistem manual sedia ada bagi memudah dan mempercepatkan kerja-kerja rutin harian serta menggantikan tugas-tugas yang selama ini dilakukan oleh manusia atau mesin manual. Kita dapat lihat betapa meluasnya penggunaan sistem terbenam pada hari ini untuk mengendalikan CCTV, lampu isyarat, kawalan keselamatan rumah, mesin bayaran tempat letak kereta, pintu pagar automatik dan banyak lagi. Selain itu, sistem terbenam juga digunakan dalam telefon mudah alih yang telah boleh dikatakan dimiliki oleh setiap orang.
 
-Oleh kerana kebanyakan sistem terbenam ini tidak memerlukan manusia untuk mengendalikannya setiap masa, ia biasanya dibina dan dipasang sebagai 'sistem tanpa kepala' atau \textit{headless system}\cite{w2} yang bermaksud tidak dipasang dengan monitor, papan kekunci dan tetikus. Lazimnya, sistem terbenam sebegini mempunyai perkakasan yang minima bagi menjimatkan ruang, dan tenaga yang digunakan. Keadaan fizikal perkakasan ini menyebabkannya tidak disertakan dengan antaramuka bergrafik dan biasanya hanya diakses menggunakan terminal melalui Serial Port (RS-232), SSH atau telnet. Ini menimbulkan kesukaran kepada juruteknik biasa untuk memeriksa dan menetapkan konfigurasi kepada sistem sebegini kerana kekangan antaramuka yang tidak mesra pengguna. Kerana itulah projek ini dilakukan agar dapat mengatasi masalah ini.
+Oleh kerana kebanyakan sistem terbenam untuk tujuan automasi tidak memerlukan manusia untuk mengendalikannya setiap masa, ia biasanya dibina dan dipasang sebagai 'sistem tanpa kepala' atau \textit{headless system}\cite{w2} yang bermaksud tidak dipasang dengan monitor, papan kekunci dan tetikus. Lazimnya, sistem terbenam sebegini mempunyai perkakasan yang minima bagi menjimatkan ruang, dan tenaga yang digunakan. Keadaan fizikal perkakasan yang sebegini menyebabkan sistem terbenam Linux tersebut tidak disertakan dengan antaramuka bergrafik dan biasanya hanya dapat diakses menggunakan arahan teks pada terminal sama ada melalui Serial Port (RS-232), SSH atau telnet. Ini menimbulkan kesukaran kepada juruteknik biasa untuk memeriksa dan menetapkan konfigurasi kepada sistem sebegini kerana kekangan antaramuka yang tidak mesra pengguna. Kerana itulah saya mencadangkan projek ini dilakukan agar dapat membincangkan dan mengatasi masalah ini.
 
 \subsection{Pengenalan Kepada Sistem Terbenam Linux}%
-Sistem Terbenam atau \textit{Embedded System} merupakan sejenis sistem komputer yang direka untuk tujuan khusus, sebagai salah satu elemen yang melengkapi sebuah sistem yang lebih besar. Ia biasanya diperlukan dalam sistem yang melibatkan pengkomputeran masa-nyata. Sistem ini biasanya dibenam sebagai sebahagian dari peranti sempurna yang melibatkan perkakasan melibatkan perkakasan dan bahagian-bahagian mekanikal lain. Sistem terbenam mempunyai pemproses teras seperti mikropengawal atau pemproses signal digital (DSP). 
+Sistem Terbenam atau \textit{Embedded System} merupakan sejenis sistem komputer yang direka untuk tujuan khusus, sebagai salah satu elemen yang melengkapi sebuah sistem yang lebih besar. Ia biasanya diperlukan dalam sistem yang melibatkan pengkomputeran masa-nyata. Sistem ini biasanya dibenam sebagai sebahagian dari peranti sempurna yang melibatkan perkakasan dan bahagian-bahagian mekanikal lain. Sistem terbenam mempunyai pemproses teras seperti mikropengawal atau pemproses signal digital (DSP). Antara ciri utama sistem terbenam ialah ianya telah didedikasikan untuk melakukan tugas tertentu. Ada kalanya, sistem terbenam ini juga menggunakan pemproses yang berkuasa tinggi dan komunikasi yang banyak. Contohnya, sistem kawalan trafik udara yang juga dipanggil sebagai sistem terbenam walaupun ianya melibatkan komputer kerangka dan rangkaian luar dan dalam diantara lapangan terbang dan kawasan radar. Namun, oleh kerana sistem terbenam umumnya direka untuk tujuan khusus, jurutera rekabentuk lazimnya boleh mengoptimumkannya untuk mengecilkan saiz dan kos produksi serta meningkatkan keupayaan dan kebolehpercayaannya. Sistem terbenam yang optimum ini kemudiannya dapat yang dihasilkan dalam produksi besar-besaran dan mendapat faedah daripada ekonomi skala.
 
-\subsection{Pengenalan Kepada PersiaSYS Sdn. Bhd.}%
-PersiaSYS Sdn. Bhd. adalah...
+Kernel Linux adalah satu kernel sistem pengoperasian seperti Unix. Linux adalah sistem operasi yang dilesenkan dibawah model pembangunan dan pegedaran perisian percuma dan bersumber terbuka. Ia dikeluarkan dibawah versi GNU General Public License 2 (GPLv2) dan dimajukan dengan kontribusi pengguna dan pembangun persendirian mahupun berkumpulan dari seluruh pelusuk dunia. Linux adalah salah satu perisian percuma dan bersumber terbuka yang sangat popular dalam industri perkomputeran. Kernel Linux pada mulanya dicetus dan dihimpunkan oleh Linus Torvalds dalam tahun 1991. Pada ketika itu, komuniti Minix menyumbangkan kod dan idea-idea untuk Kernel Linux. Pada masa itu juga, Projek GNU telah mencipta banyak komponen-komponen yang diperlukan dalam penghasilan sistem pengoperasian dengan perisian percuma. Kernel GNU Hurd yang dibina oleh Projek GNU walaupun dibina lebih awal, tidaklah selengkap Linux. Manakala sistem pengoperasian BSD pula mempunyai masalah dari segi perundangan dan masih belum dibebaskan sebagai perisian percuma. Walaupun versi awal Linux mempunyai fungsi yang terhad, ia dapat dibangunkan dengan pesat oleh pemaju-pemaju dan pengguna-pengguna kod daripada projek GNU untuk digunakan di dalam sistem pengoperasian baru itu. Hasilnya, kernel Linux telah menerima kontribusi dari beribu-ribu pengaturcara dari seluruh dunia.
+
+Distribusi Linux atau juga dipanggil Distro adalah ahli keluarga sistem pengoperasian Linux. Distro ini dibina daripada Kernel Linux dengan beraneka pakej perisian seperti Sistem Tetingkap X dan perisian-perisian daripada projek GNU. Terdapat juga distro yang telah dikecilkan saiznya dan cenderung kepada alternatif yang padat seperti \textit{busybox}, \textit{uclibc} dan \textit{dietlibc} yang sesuai untuk kegunaan sistem terbenam. Menurut carta populariti DistroWatch\cite{w3} pada ketika dokumen ini ditulis, terdapat lebih daripada 300 distribusi Linux yang aktif dan masih digunakan.
+
+Penggunaan sistem operasi Linux dalam sistem terbenam bukanlah satu perkara asing pada hari ini kerana ianya bersumber terbuka dan boleh diubahsuai dengan mudah. Kebolehlenturan sistem operasi Linux membolehkan jurutera perisian menambah dan membuang modul bagi memastikan ianya sangat optimum dan sesuai digunakan untuk tujuan khusus. Keupayaan ini amat bersesuaian ciri utama sistem terbenam hingga menjadikannya satu pilihan yang ideal untuk sistem terbenam. Sebuah sistem terbenam linux yang melakukan tugas khusus boleh dioptimumkan dari segi perisian dan perkakasan kerana sistem operasi linux boleh diolah agar ianya bersaiz kecil dan hanya menggunakan sumber dan perkakasan yang minimum.
+
+\subsection{Pengenalan Kepada Sistem \textit{Realtime Rain Gauge}}%
+Sistem \textit{Realtime Rain Gauge} adalah sebuah sistem terbenam yang dibina bagi menggantikan sistem tolok hujan manual yang telah lama digunakan. Produk ini telah direkabentuk oleh saya sendiri dan beberapa rakan sekerja bagi memenuhi kehendak pelanggan kami yang terdiri dari perunding kejuruteraan sivil dan geoteknik. Produk ini telahpun siap pada tahun 2008 dan telah digunapakai oleh syarikat penyelenggaraan lebuhraya malaysia serta dipasang di kawasan-kawasan pengawasan cerun disepanjang lebuhraya utama di Malaysia.
+
+Papan induk yang digunakan dalam Sistem Realtime Rain Gauge ini ialah sebuah komputer berpapan tunggal atau juga dipanggil SBC iaitu singkatan kepada 'Single Board Computer'. Papan induk ini berfungsi menggunakan sistem operasi terbenam Linux dari distro Debian ARM\cite{w4}. \textit{Debian ARM port} adalah sebuah distro GNU/Linux yang dibangunkan untuk kegunaan pemproses dari senibina ARM. Senibina ARM ialah senibina RISC (Reduced Instruction Set Computing) yang pada asalnya dibina untuk Acorn Archimedes dan beberapa mesin desktop. Pada hari ini, ARM lebih cenderung kepada sistem terbenam yang berkuasa-rendah (low-powered) seperti telefon, router, PDA dan ianya telah menjadi senibina pemproses yang paling popular didunia. Setiap orang mungkin sedang menggunakannya kerana ia terdapat dalam telefon-telefon bimbit dan peranti popular seperti telefon bimbit Nokia, Sony Ericsson, iPad, iPhone, Samsung, HTC dan sebagainya. Ia adalah pemproses yang paling dekat dengan kita kerana kita membawanya bersama setiap hari. Selain dari itu, peranti-peranti terbenam seperti SBC yang digunakan dalam sistem ini juga biasanya dilengkapi dengan pemproses ini. Oleh kerana Sistem Realtime Rain Gauge ini dipasang di lokasi yang jauh dari sumber elektrik, ia dikuasakan menggunakan bateri boleh cas dan solar panel.
+
+Sistem terbenam ini mempunyai input yang membaca amaun hujan dalam masa-nyata. Data tersebut akan disimpan didalam log dan segera dihantar ke pelayan RTMS (Real Time Monitoring System) melalui rangkaian GPRS atau 3G. Pengguna dari kalangan jurutera sivil dan perunding geoteknik boleh melayari laman web pelayan untuk melihat taburan hujan serta memuat turun data taburan hujan. Menerusi laman web RTMS juga, pengguna dapat melihat sama ada hujan sedang turun di lokasi tertentu yang telah dipasang dengan peranti ini dalam masa-nyata. Pada masa ini, terdapat lebih daripada 70 buah Realtime Rain Gauge telah dipasang di sepanjang lebuh raya Utara Selatan sahaja. Dengan adanya sistem ini, jurutera dan perunding geoteknik dapat memuat turun data pada bila-bila masa dengan mudah melalui capaian internet tanpa perlu pergi ke lokasi stesen cuaca. Teknologi ini telah dapat menjimatkan masa, tenaga dan kos. 
+
+Sistem ini perlu diselenggara bagi memastikan ianya sentiasa berfungsi dengan baik dan mempunyai tahap kebolehpercayaan yang tinggi. Lokasi stesen cuaca perlu dipantau dan dibersihkan setiap bulan. Solar panel perlu diperiksa agar ianya tidak tertutup oleh daun-daun atau pokok-pokok yang berdekatan. Bateri boleh cas juga perlu diperiksa bagi memastikan ianya mempunyai bekalan kuasa yang cukup untuk menghidupkan Sistem Realtime Raingauge ini. Kad sim untuk rangkaian internet juga harus diperiksa bagi memastikan data dapat dihantar kepada pelayan dalam masa-nyata.
 
 \section{Latarbelakang Masalah}
-Masalah antaramuka linux sedia ada
+Pada awal perlaksanaan projek Realtime Monitoring System menggunakan sistem terbenam Linux yang dipanggil Realtime Rain Gauge, peranti ini telah berjaya dipasang dan digunakan di beberapa lokasi zon pengawasan cerun di sepanjang lebuhraya utama Malaysia yang menghubungkan utara dan selatan, timur dan barat serta lebuhraya disekitar Kuala Lumpur. Pada masa itu, tugas penyelenggaraan bukanlah satu perkara yang sukar bagi pihak vendor produk ini kerana ianya dibangunkan oleh vendor sendiri dan juruteknik yang ditugaskan untuk menyelenggara sistem terbenam ini sangat mahir dengan arahan teks Linux dan juga sistem terbenam.
+
+Selepas daripada tempoh jaminan, sistem ini telah diserahkan sepenuhnya kepada pelanggan. Oleh itu, kerja penyelenggaran sistem ini dilakukan oleh pihak penyelenggara yang ditugaskan oleh pelanggan. Juruteknik yang sebelum ini biasa melakukan penyelenggaraan stesen cuaca bukanlah juruteknik yang mahir dengan sistem komputer. Apatah lagi, arahan teks Linux untuk melakukan kerja selenggaraan sangat asing bagi mereka. Keadaan ini telah menimbulkan permasalahan kerana pihak penyelenggara tersebut tidak dapat menyediakan juruteknik khas yang mempunyai kemahiran Linux untuk menyelenggara sistem ini. Meskipun sistem ini telah didokumentasikan dengan sempurna, juruteknik yang ditugaskan untuk kerja selenggaraan sistem ini sering mengalami kesukaran untuk mengingat arahan-arahan teks yang dirasakan tidak mesra pengguna. Hal ini telah mengakibatkan peningkatan kos untuk khidmat sokongan yang sepatutnya tidak diperlukan dan mengurangkan produktiviti kerana pihak vendor pada dasarnya tidak menyediakan khidmat sokongan melalui telefon ini.
+
+Masalah utama dilihat pada kelemahan juruteknik penyelenggaraan stesen kaji cuaca yang tidak mempunyai kemahiran arahan teks Linux kerana ianya mungkin perkara yang sangat asing dan baru bagi mereka. Masalah ini mungkin akan dapat diatasi dengan menyediakan antaramuka yang lebih mudah dan mesra pengguna bagi melakukan tugas konfigurasi dan penyelenggaraan sistem.
 
 \section{Penyataan Masalah}
-The general problem in the context that require extended works
-presented in this thesis. Better if each problem is explained in a
-paragraph. Do citation as~\cite{b1}. You can just cite multiple
-citations such as~\cite{j1, c1, w1}. Cite like so \cite{b1}.
+Penghasilan produk yang mesra pengguna telah menjadi keperluan kepada semua sistem berkomputer untuk membolehkannya bersaing dengan produk-produk lain yang tumbuh bagai cendawan dalam industri komputer dan teknologi maklumat. Telah dilihat bahawa sistem terbenam linux yang dibina untuk tujuan khusus tanpa memerlukan operator juga tidak terkecuali untuk tampil dengan ciri-ciri mesra pengguna ini. Ini kerana ada ketikanya produk ini perlu juga diakses oleh pengguna untuk tujuan pemantauan dan penyelenggaraan.
+
+Sungguhpun sistem pengoperasian Linux mempunyai keupayaan yang tinggi dalam menangani isu pengurusan perkakasan dan dapat diolah untuk melakukan fungsi tertentu dengan baik dan tepat dalam masa nyata, sistem pengoperasian ini telah dipandang sepi oleh pengguna akhir kerana kaedah penggunaannya yang kurang mesra pengguna. Telah terbukti bahawa pengguna akhir lebih memilih untuk menggunakan sistem pengoperasian dan perisian yang mempunyai antaramuka bergrafik seperti Microsoft Windows dan Mac OSX.
+
+Ini menimbulkan kerumitan kepada pengguna akhir untuk mengingat arahan-arahan Linux bagi melakukan konfigurasi kerana kurangnya pengalaman pengguna dengan sistem pengoperasian Linux yang dirasakan asing bagi mereka. Kerana itulah timbulnya idea untuk menghasilkan antaramuka pengguna bergrafik untuk mengautomasikan konfigurasi sistem terbenam Linux ini.
+
+Kekangan dari segi saiz storan, ingatan dan peranti paparan yang terdapat pada sistem terbenam juga menimbulkan masalah dalam mencari kaedah yang sesuai untuk menghasilkan antaramuka bergrafik bagi sistem ini. Ini kerana sistem terbenam lazimnya dibina dengan saiz storan dan ingatan yang kecil. Ini bertujuan untuk menghasilkan sistem yang ringkas dan padat serta hanya didedikasikan untuk tujuan yang khusus.
+
+Dengan itu, sebuah antaramuka bergrafik perlu dibangunkan bagi menggantikan kaedah konfigurasi sedia ada yang menggunakan antaramuka baris arahan dengan mengambil kira isu saiz storan dan ingatan yang kecil dan padat dalam sistem terbenam Linux.
 
 \section{Matlamat Projek}
-Membangunkan aplikasi antaramuka web
+Matlamat projek ini ialah untuk membangunkan sebuah aplikasi yang menyediakan antaramuka pengguna bergrafik yang lebih mesra pengguna bagi tujuan konfigurasi dan penyelenggaraan sistem terbenam linux. Aplikasi ini akan menggantikan kaedah konfigurasi menggunakan antaramuka baris arahan atau Command Line Interface (CLI) yang sedia ada.
 
 \section{Objektif Projek}
-Memudahkan kerja konfigurasi dan kemaskini
+Selain daripada matlamat kajian yang fokus kepada pencapaian kajian secara umum, terdapat beberapa objektif yang disasarkan atas kajian yang dijalankan ini iaitu:
+\bgroup
+\renewcommand\theenumi{\roman{enumi}}
+\begin{enumerate}
+\item Memudahkan tugas penyeliaan dan penyelenggaraan Sistem Realtime Rain Gauge oleh juruteknik stesen kaji cuaca yang mempunyai kemahiran IT yang rendah.
+
+\item Menghasilkan aplikasi yang mesra pengguna dengan struktur kawalan dalaman yang konsisten dan mempunyai integriti yang tinggi untuk meminimumkan ralat pengguna dan ralat pada aplikasi sistem utama.
+
+\item Membangunkan aplikasi yang mampu menjimatkan masa konfigurasi dan penyelenggaraan yang seterusnya dapat menjimatkan kos khidmat sokongan luar bagi tugas penyelenggaraan sistem.
+
+\item Menggunakan arahan konfigurasi yang sama dengan kaedah konfigurasi sedia ada yang digunakan dan aplikasi yang dibangunkan hanyalah bertindak sebagai antaramuka bergrafik yang lebih mesra pengguna bagi tujuan konfigurasi dan penyelenggaraan sistem Realtime Rain Gauge.
+
+\end{enumerate}
+\egroup
+
 
 \section{Skop Projek}
-Terhad kepada:
-prototaip
+Oleh kerana kajian ini adalah perintis dan penambahbaikan bagi kaedah konfigurasi sistem terbenam Linux yang sedia ada, ruang lingkup pembangunan aplikasi ini adalah terhad kepada:
+\bgroup
+\renewcommand\theenumi{\roman{enumi}}
+\begin{enumerate}
+\item Membangunkan prototaip aplikasi antaramuka bergrafik yang memenuhi keperluan tugas konfigurasi dan penyelenggaraan Sistem Realtime Rain Gauge bagi membuktikan bahawa aplikasi sebegini dapat menggantikan kaedah konfigurasi sedia ada yang menggunakan antaramuka baris arahan dan kurang mesra pengguna.
+
+\item Menyediakan antaramuka bergrafik bagi membolehkan pengguna melihat data yang disimpan di dalam peranti terbenam Realtime Rain Gauge dan memuat turun fail data dalam bentuk teks untuk kegunaan semakan tahap kecekapan sistem yang dilakukan oleh perunding geoteknik.
+
+\item Antaramuka bergrafik ini hanya boleh diakses melalui pelayar web kerana kekangan sistem yang tidak mempunyai kad grafik dan sambungan skrin.
+
+\item Antaramuka yang dibina ini hanya dibuat bagi memenuhi kehendak sebahagian automasi yang terdapat di dalam sistem Realtime Rain Gauge dalam kajian ini sahaja bagi membuktikan bahawa antaramuka bergrafik untuk sistem terbenam linux boleh dihasilkan dan dapat dikembangkan dimasa akan datang mengikut keperluan pengguna sistem.
+
+\end{enumerate}
+\egroup
+
 
 \section{Kepentingan Projek}
-Projek ini penting bagi memudahkan kerja dan meningkatkan produktiviti
+Kecekapan dan integriti sistem automasi menjadi asas kepada kebolehpercayaan sistem dalam menyediakan data yang tepat dan efisien. Kecekapan sistem ini sangat bergantung kepada penyeliaan dan penyelenggaraan sistem bagi memastikan ianya sentiasa berfungsi dengan baik. Bagi memastikan tugas penyeliaan dan penyelenggaraan dilakukan dengan baik tanpa terikat dan terlalu bergantung kepada sokongan pihak luar, juruteknik penyelenggaraan harus dapat melakukan konfigurasi sistem dengan mudah dan cepat agar dapat meminimakan tempoh \textit{downtime} sistem terbenam jika berlaku sebarang gangguan.
+
+Atas dasar kepentingan kecekapan sistem dan juruteknik penyelenggaraan ini, kajian tesis dilakukan bagi mengatasi permasalahan antaramuka sistem yang kurang mesra pengguna bagi membolehkan sistem ini diselenggara dengan mudah dalam masa yang singkat.
 
 \section{Struktur Tesis}
 Kajian tesis ini dilakukan dan dihuraikan kepada beberapa bab yang menunjukkan perjalanan keseluruhan kajian. Secara ringkasnya bab-bab ini mengandungi:
 \bgroup
 \renewcommand\theenumi{\roman{enumi}}
-%\renewcommand\labelenumi{\theenumi}
 
 \begin{enumerate}
 \item Bab 1 – Pengenalan
