@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="625.71429"
+   height="238.57141"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.1 r9760"
+   sodipodi:docname="prototaip.svg">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient4350">
+      <stop
+         style="stop-color:#414141;stop-opacity:1;"
+         offset="0"
+         id="stop4352" />
+      <stop
+         style="stop-color:#a7a7a7;stop-opacity:1;"
+         offset="1"
+         id="stop4354" />
+    </linearGradient>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend"
+       style="overflow:visible">
+      <path
+         id="path3909"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4350"
+       id="linearGradient4356"
+       x1="72.85714"
+       y1="402.36218"
+       x2="734.28577"
+       y2="148.07646"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-58.571429,-127.14286)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="398.3187"
+     inkscape:cy="148.83397"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="949"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-27.857153,-30.933605)">
+    <rect
+       style="fill:url(#linearGradient4356);fill-opacity:1;stroke:none"
+       id="rect2985"
+       width="625.71429"
+       height="238.57141"
+       x="27.857153"
+       y="30.933605" />
+    <g
+       id="g4358"
+       transform="translate(-57.857156,-127.85716)">
+      <g
+         transform="translate(-53.214279,2.0315838e-8)"
+         id="g2999">
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke:none"
+           id="rect2987"
+           width="119.28572"
+           height="77.857147"
+           x="160.71428"
+           y="179.50504"
+           ry="10" />
+        <text
+           xml:space="preserve"
+           style="font-size:15.66535568px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+           x="220.19652"
+           y="203.20425"
+           id="text2991"
+           sodipodi:linespacing="125%"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Century Gothic;-inkscape-font-specification:Century Gothic Semi-Bold"
+             sodipodi:role="line"
+             id="tspan2993"
+             x="220.19652"
+             y="203.20425">Penghasilan</tspan><tspan
+             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Century Gothic;-inkscape-font-specification:Century Gothic Semi-Bold"
+             sodipodi:role="line"
+             x="222.38416"
+             y="222.78595"
+             id="tspan2995">Objektif </tspan><tspan
+             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Century Gothic;-inkscape-font-specification:Century Gothic Semi-Bold"
+             sodipodi:role="line"
+             x="220.19652"
+             y="242.36765"
+             id="tspan2997">Prototaip</tspan></text>
+      </g>
+      <g
+         transform="translate(101.07144,2.0315838e-8)"
+         id="g3006">
+        <rect
+           ry="10"
+           y="179.50504"
+           x="160.71428"
+           height="77.857147"
+           width="119.28572"
+           id="rect3008"
+           style="fill:#ffffff;fill-opacity:1;stroke:none" />
+        <text
+           sodipodi:linespacing="125%"
+           id="text3010"
+           y="203.02451"
+           x="220.1965"
+           style="font-size:15.66535568px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+           xml:space="preserve"><tspan
+             y="203.02451"
+             x="220.1965"
+             id="tspan3012"
+             sodipodi:role="line"
+             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Century Gothic;-inkscape-font-specification:Century Gothic Semi-Bold">Penentuan</tspan><tspan
+             id="tspan3014"
+             y="222.6062"
+             x="222.38414"
+             sodipodi:role="line"
+             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Century Gothic;-inkscape-font-specification:Century Gothic Semi-Bold">Fungsi </tspan><tspan
+             id="tspan3016"
+             y="242.1879"
+             x="220.1965"
+             sodipodi:role="line"
+             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Century Gothic;-inkscape-font-specification:Century Gothic Semi-Bold">Prototaip</tspan></text>
+      </g>
+      <g
+         id="g3018"
+         transform="translate(245.00003,9.2857151)">
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke:none"
+           id="rect3020"
+           width="140"
+           height="59.285717"
+           x="160.71428"
+           y="179.50504"
+           ry="10" />
+        <text
+           xml:space="preserve"
+           style="font-size:15.66535568px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+           x="230.07558"
+           y="203.60229"
+           id="text3022"
+           sodipodi:linespacing="125%"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Century Gothic;-inkscape-font-specification:Century Gothic Semi-Bold"
+             sodipodi:role="line"
+             x="232.26321"
+             y="203.60229"
+             id="tspan3026">Pembangunan </tspan><tspan
+             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Century Gothic;-inkscape-font-specification:Century Gothic Semi-Bold"
+             sodipodi:role="line"
+             x="230.07558"
+             y="223.18399"
+             id="tspan3028">Prototaip</tspan></text>
+      </g>
+      <g
+         id="g3032"
+         transform="translate(409.64291,0)">
+        <rect
+           ry="10"
+           y="179.50504"
+           x="160.71428"
+           height="77.857147"
+           width="119.28572"
+           id="rect3034"
+           style="fill:#ffffff;fill-opacity:1;stroke:none" />
+        <text
+           sodipodi:linespacing="125%"
+           id="text3036"
+           y="203.20425"
+           x="220.19652"
+           style="font-size:15.66535568px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+           xml:space="preserve"><tspan
+             y="203.20425"
+             x="220.19652"
+             id="tspan3038"
+             sodipodi:role="line"
+             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Century Gothic;-inkscape-font-specification:Century Gothic Semi-Bold">Penghasilan</tspan><tspan
+             id="tspan3040"
+             y="222.78595"
+             x="222.38416"
+             sodipodi:role="line"
+             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Century Gothic;-inkscape-font-specification:Century Gothic Semi-Bold">Objektif </tspan><tspan
+             id="tspan3042"
+             y="242.36765"
+             x="220.19652"
+             sodipodi:role="line"
+             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Century Gothic;-inkscape-font-specification:Century Gothic Semi-Bold">Prototaip</tspan></text>
+      </g>
+      <g
+         id="g3075">
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke:none"
+           id="rect3044"
+           width="135.71429"
+           height="56.42857"
+           x="99.285713"
+           y="320.21933" />
+        <text
+           sodipodi:linespacing="125%"
+           id="text2991-7"
+           y="342.88803"
+           x="166.84073"
+           style="font-size:15.66535568px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+           xml:space="preserve"><tspan
+             id="tspan2995-6"
+             y="342.88803"
+             x="169.02837"
+             sodipodi:role="line"
+             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Century Gothic;-inkscape-font-specification:Century Gothic Semi-Bold">Pelan </tspan><tspan
+             id="tspan2997-8"
+             y="362.46973"
+             x="166.84073"
+             sodipodi:role="line"
+             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Century Gothic;-inkscape-font-specification:Century Gothic Semi-Bold">Prototaip</tspan></text>
+      </g>
+      <g
+         transform="translate(154.28572,0)"
+         id="g3081">
+        <rect
+           y="320.21933"
+           x="99.285713"
+           height="56.42857"
+           width="135.71429"
+           id="rect3083"
+           style="fill:#ffffff;fill-opacity:1;stroke:none" />
+        <text
+           xml:space="preserve"
+           style="font-size:15.66535568px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+           x="166.42767"
+           y="344.41019"
+           id="text3085"
+           sodipodi:linespacing="125%"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Century Gothic;-inkscape-font-specification:Century Gothic Semi-Bold"
+             sodipodi:role="line"
+             x="168.61531"
+             y="344.41019"
+             id="tspan3087">Ringkasan </tspan><tspan
+             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Century Gothic;-inkscape-font-specification:Century Gothic Semi-Bold"
+             sodipodi:role="line"
+             x="166.42767"
+             y="363.99188"
+             id="tspan3089">Definisi</tspan></text>
+      </g>
+      <g
+         id="g3091"
+         transform="translate(308.57145,0)">
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke:none"
+           id="rect3093"
+           width="135.71429"
+           height="56.42857"
+           x="99.285713"
+           y="320.21933" />
+        <text
+           sodipodi:linespacing="125%"
+           id="text3095"
+           y="352.78595"
+           x="166.84073"
+           style="font-size:15.66535568px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+           xml:space="preserve"><tspan
+             id="tspan3099"
+             y="352.78595"
+             x="166.84073"
+             sodipodi:role="line"
+             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Century Gothic;-inkscape-font-specification:Century Gothic Semi-Bold">Prototaip</tspan></text>
+      </g>
+      <g
+         transform="translate(462.85719,0)"
+         id="g3103">
+        <rect
+           y="320.21933"
+           x="99.285713"
+           height="56.42857"
+           width="135.71429"
+           id="rect3105"
+           style="fill:#ffffff;fill-opacity:1;stroke:none" />
+        <text
+           xml:space="preserve"
+           style="font-size:15.66535568px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+           x="166.98222"
+           y="344.16159"
+           id="text3107"
+           sodipodi:linespacing="125%"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Century Gothic;-inkscape-font-specification:Century Gothic Semi-Bold"
+             sodipodi:role="line"
+             x="166.98222"
+             y="344.16159"
+             id="tspan3109">Laporan</tspan><tspan
+             id="tspan3111"
+             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Century Gothic;-inkscape-font-specification:Century Gothic Semi-Bold"
+             sodipodi:role="line"
+             x="166.98222"
+             y="363.74329">Penilaian</tspan></text>
+      </g>
+      <path
+         sodipodi:nodetypes="cccccccc"
+         inkscape:connector-curvature="0"
+         id="path4333"
+         d="m 261.78572,218.43683 -12.41813,-7.17175 0,4.3612 -30.58781,0 0,5.61466 30.58781,0 0,4.3612 z"
+         style="fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:none"
+         d="m 405.71431,218.43683 -12.41813,-7.17175 0,4.3612 -30.58781,0 0,5.61466 30.58781,0 0,4.3612 z"
+         id="path4338"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccc" />
+      <path
+         sodipodi:nodetypes="cccccccc"
+         inkscape:connector-curvature="0"
+         id="path4340"
+         d="m 570.35719,218.43683 -12.41813,-7.17175 0,4.3612 -30.58781,0 0,5.61466 30.58781,0 0,4.3612 z"
+         style="fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:none"
+         d="m 167.13964,320.21933 7.17175,-12.41813 -4.3612,0 0,-56.58781 -5.61466,0 0,56.58781 -4.3612,0 z"
+         id="path4342"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccc" />
+      <path
+         sodipodi:nodetypes="cccccccc"
+         inkscape:connector-curvature="0"
+         id="path4344"
+         d="m 321.42536,320.21933 7.17175,-12.41813 -4.3612,0 0,-56.58781 -5.61466,0 0,56.58781 -4.3612,0 z"
+         style="fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:none"
+         d="m 475.71109,320.21933 7.17175,-12.41813 -4.3612,0 0,-62.58781 -5.61466,0 0,62.58781 -4.3612,0 z"
+         id="path4346"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccc" />
+      <path
+         sodipodi:nodetypes="cccccccc"
+         inkscape:connector-curvature="0"
+         id="path4348"
+         d="m 629.99683,320.21933 7.17175,-12.41813 -4.3612,0 0,-56.58781 -5.61466,0 0,56.58781 -4.3612,0 z"
+         style="fill:#ffffff;fill-opacity:1;stroke:none" />
+    </g>
+  </g>
+</svg>

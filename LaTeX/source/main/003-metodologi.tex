@@ -1,9 +1,7 @@
 \chapter{Metodologi}\label{c3}
 
 \section{Pengenalan}
-Metodologi pembangunan antaramuka pengguna bergrafik untuk mengautomasikan konfigurasi bagi sistem terbenam Linux yang juga dipanggil ELWI iaitu singkatan kepada \textit{"Embedded Linux Web Interface"} ini ialah satu set panduan lengkap yang mengandungi model-model, kemudahan peralatan (tool) dan teknik-teknik khusus yang perlu diikuti bagi melaksanakan setiap aktiviti yang terdapat dalam kitar hayat mereka dalam bidang ini. Metodologi yang didokumenkan ini boleh menjadi bahan rujukan kepada organisasi yang berkaitan bagi memahami pembangunan sesebuah sistem. 
-
-Metodologi ini juga merupakan maklumat bertulis dalam bentuk buku atau dokumen bertulis mengandungi maklumat terperinci bagi setiap aktiviti yang perlu dilaksanakan oleh pembangunan sistem termasuk bentuk dokumentasi dan laporan-laporan yang perlu disediakan. Kitar hayat pembangunan sistem adalah satu proses lengkap bagi pembangunan sebuah sistem maklumat yang bermula dengan fasa atau aktiviti penyiasatan awal dan berakhir dengan fasa operasi dan sokongan. Cadangannya adalah untuk mewujudkan sebuah sistem baru atau mengolah sistem sedia ada bagi meningkatkan keupayaannya untuk memenuhi keperluan semasa dan menyelesaikan masalah.
+Metodologi pembangunan antaramuka pengguna bergrafik untuk mengautomasikan konfigurasi bagi sistem terbenam Linux yang juga dipanggil ELWI iaitu singkatan kepada \textit{"Embedded Linux Web Interface"} ini ialah satu set panduan lengkap yang mengandungi model-model, kemudahan peralatan (tool) dan teknik-teknik khusus yang perlu diikuti bagi melaksanakan setiap aktiviti yang terdapat dalam kitar hayat mereka dalam bidang ini. Metodologi yang didokumenkan ini boleh menjadi bahan rujukan kepada organisasi yang berkaitan bagi memahami pembangunan sesebuah sistem. Metodologi ini juga merupakan maklumat bertulis dalam bentuk buku atau dokumen bertulis mengandungi maklumat terperinci bagi setiap aktiviti yang perlu dilaksanakan oleh pembangunan sistem termasuk bentuk dokumentasi dan laporan-laporan yang perlu disediakan. Kitar hayat pembangunan sistem adalah satu proses lengkap bagi pembangunan sebuah sistem maklumat yang bermula dengan fasa atau aktiviti penyiasatan awal dan berakhir dengan fasa operasi dan sokongan. Cadangannya adalah untuk mewujudkan sebuah sistem baru atau mengolah sistem sedia ada bagi meningkatkan keupayaannya untuk memenuhi keperluan semasa dan menyelesaikan masalah.
 
 \section{Metodologi}
 Metodologi didefinisikan sebagai suatu garis panduan dan langkah-langkah menyeluruh yang perlu dipenuhi untuk setiap aktiviti yang terdapat pada kitar hayat pembangunan sistem meliputi pewakilan melalui model, peralatan, teknik atau algoritma-algoritma penyelesaian masalah yang telah dikenalpasti. 
@@ -15,7 +13,7 @@ Setiap pembangunan projek melalui beberapa fasa atau peringkat. Fasa ini merupak
 Terdapat pelbagai metodologi pembangunan sistem yang boleh digunakan. Di antaranya ialah model Air Terjun, model Pembangunan Aplikasi Cepat, model Spiral, model Prototaip dan model Transformasi Formal. Metodologi Prototaip telah dipilih dalam pembangunan projek ini.
 
 \section{Model Prototaip}
-Model yang digunakan dalam pembangunan ELWI ini ialah model prototaip. Model ini dipilih kerana spesifikasi dan keupayaan sistem adalah adalah kritikal dan tidak dapat ditentukan dengan tepat pada awal proses pembangunan sistem. Dengan pemilihan model Prototaip, rangka sistem dapat dihasilkan dengan cepat. Prototaip merupakan satu perisian awalan yang akan diuji oleh pembangun dan dapat diuji dalam sistem terbenam Linux sebenar bagi mengenalpasti kelemahan yang terdapat di dalam aplikasi yang dibangunakan. Rajah \ref{c3:f1} menunjukkan proses-proses yang terlibat dalam pembangunan prototaip.
+Model yang digunakan dalam pembangunan ELWI ini ialah model prototaip. Model ini dipilih kerana spesifikasi dan keupayaan sistem adalah adalah kritikal dan tidak dapat ditentukan dengan tepat pada awal proses pembangunan sistem. Dengan pemilihan model Prototaip, rangka sistem dapat dihasilkan dengan cepat. Prototaip merupakan satu perisian awalan yang akan diuji oleh pembangun dan dapat diuji dalam sistem terbenam Linux sebenar bagi mengenalpasti kelemahan yang terdapat di dalam aplikasi yang dibangunkan. Rajah \ref{c3:f1} menunjukkan proses-proses yang terlibat dalam pembangunan prototaip.
 
 \begin{figure}[!h]
 \centering{\includegraphics[width=1\textwidth]{source/fig/prototaip.eps}}
@@ -63,14 +61,97 @@ Fasa implementasi merupakan fasa di mana segala analisis dan kajian rekabentuk d
 \subsection{Fasa Pengujian}
 Aplikasi yang telah siap dibangunkan diuji bagi memastikan tahap keberkesanannya adalah konsisten semasa ianya digunakan sebagai aplikasi penyelesaian masalah. Aplikasi ini diuji dalam pelbagai peringkat iaitu pengujian fungsi, pengujian integrasi dan pengujian aplikasi. Pengujian-pengujian ini dilakukan sama ada semasa proses pengekodan dan juga pada fasa pengujian bagi memastikan output yang dihasilkan adalah konsisten dan tidak bercanggah dengan objektif yang ingin dicapai.
 
-\section{Keperluan Sistem}
-Dalam seksyen Keperluan Sistem ini, kita membincangkan pemilihan perkakasan dan perisian untuk membangunkan antaramuka web yang dipanggil ELWI.
+\section{Keperluan Pembangunan Sistem}
+Dalam seksyen Keperluan Sistem ini, kita membincangkan pemilihan perkakasan dan perisian untuk membangunkan antaramuka web yang dipanggil ELWI. Terdapat dua komponen utama yang perlu ada dalam proses pembangunan sistem
+yang dicadangkan. Komponen yang perlu ada ialah perisian dan perkakasan. Perisian diperlukan bagi membolehkan pengekodan dilakukan terhadap sistem yang dicadangkan. Perkakasan pula merujuk kepada alatan yang digunakan dalam pembangunan aplikasi.
 
+\newpage
 \subsection{Keperluan Perkakasan}
 
-Spesifikasi perkakasan terbenam dipilih berdasarkan keupayaannya untuk melaksanakan tugas khusus sistem terbenam tersebut.
+Spesifikasi perkakasan dipilih berdasarkan keperluannya dalam pembangunan dan keupayaannya untuk melaksanakan tugas khusus sistem terbenam. Senarai perkakasan yang digunakan dalam projek ini boleh dilihat dalam Jadual \ref{c3:t1} dan \ref{c3:t2}.
+
+\begin{table}[H]
+	\centering{
+		\newcolumntype{R}{>{\centering}X}%
+		\begin{tabularx} {0.9\textwidth} {|>{\setlength\hsize{0.6\hsize}\centering}X|X<{\setlength\hsize{1.4\hsize}\centering}|}
+			\hline
+			\textbf{Jenis Perkakasan} & \textbf{Keterangan} \\ \hline
+			Pemproses & Intel(R) Core(TM)2 CPU 4300  @ 1.80GHz \\ \hline 
+			RAM & 2 GB \\ \hline
+			Antaramuka Rangkaian & D-Link System Inc DGE-530T Gigabit Ethernet Adapter \\ \hline
+			Cakera Keras & 1 TB \\ \hline
+		\end{tabularx}
+	} 
+	\newline \newline
+    \caption[Spesifikasi Perkakasan Pembangunan]{Spesifikasi Perkakasan Pembangunan}
+    \label{c3:t1}
+\end{table}
+
+\begin{table}[H]
+	\centering{
+		\newcolumntype{R}{>{\centering}X}%
+		\begin{tabularx} {0.9\textwidth} {|>{\setlength\hsize{0.6\hsize}\centering}X|X<{\setlength\hsize{1.4\hsize}\centering}|}
+			\hline
+			\textbf{Jenis Perkakasan} & \textbf{Keterangan} \\ \hline
+			Pemproses & 200MHz ARM9 CPU \\ \hline 
+			RAM & 32MB SDRAM  \\ \hline
+			Antaramuka Rangkaian & 1 10/100 Ethernet  \\ \hline
+			Cakera Keras & 2 GB SD Card \\ \hline
+		\end{tabularx}
+	} 
+	\newline \newline
+    \caption[Spesifikasi Perkakasan Terbenam Sasaran]{Spesifikasi Perkakasan Terbenam Sasaran}
+    \label{c3:t2}
+\end{table}
 
 \subsection{Spesifikasi Perisian}
+Spesifikasi perisian yang digunakan terdiri daripada sistem operasi (OS) sebagai pemangkin utama, aplikasi untuk kegunaan pengaturcaraan sebagai perisian pembangunan, aplikasi pelayan sebagai platform pelaksana aturcara dan aplikasi sokongan untuk tujuan simulasi sistem. Secara ringkasnya, spesifikasi perisian dan kegunaannya semasa pembangunan dan perlaksanaan aplikasi boleh dilihat dalam Jadual \ref{c3:t3}.
+
+\begin{table}[H]
+	\centering{
+		\newcolumntype{R}{>{\centering}X}%
+		\begin{tabularx} {0.9\textwidth} {|>{\setlength\hsize{0.6\hsize}\centering}X|X<{\setlength\hsize{1.4\hsize}\centering}|}
+			\hline
+			\textbf{Perisian} & \textbf{Keterangan} \\ \hline
+			Ubuntu Linux & Sistem Operasi Linux untuk kegunaan simulasi \\ \hline 
+			Debian-arm Embedded Linux & Sistem Operasi Linux yang digunakan dalam sistem terbenam \\ \hline
+			Pengedit Teks & Pengedit Teks Geany digunakan dalam sistem operasi yang menyokong tetingkap dan pengedit teks Vim digunakan dalam sistem operasi yang menyokong CLI sahaja  \\ \hline
+			Lighttpd & Pelayan web ringan yang sesuai dengan sistem terbenam \\ \hline
+			PHP & Penterjemah PHP sebagai bahasa skrip pelayan \\ \hline
+			Sqlite & Pelayan web ringan yang sesuai dengan sistem terbenam \\ \hline
+			VMware Player & Sebagai simulasi kepada sistem terbenam \\ \hline
+		\end{tabularx}
+	} 
+	\newline \newline
+    \caption[Spesifikasi Perisian Pembangunan \& Pelaksanaan Sistem]{Spesifikasi Perisian Pembangunan \& Pelaksanaan Sistem}
+    \label{c3:t3}
+\end{table}
+Perisian-perisian ini dipilih dan digunakan untuk tujuan pembangunan aplikasi ini berdasarkan keperluan dan kehendak pembangunan seperti berikut:
+
+\begin{enumerate}
+\item \textbf{Debian ARM Embedded Linux} \newline
+Sistem Operasi Linux dari distro Linux terbenam Debian ARM adalah sistem operasi yang digunakan dalam sistem terbenam Linux sasaran. 
+
+\item \textbf{Ubuntu Linux} \newline
+Sistem Operasi Linux dari Distro Ubuntu digunakan dalam pembangunan dan simulasi kerana sistem operasi ini mesra pengguna dan ianya merupakan distro yang diolah daripada distro Debian yang digunakan dalam sistem terbenam Linux sasaran.
+
+\item \textbf{Pengedit Teks (Geany \& Vim)}
+Tiada kekangan kepada pemilihan aplikasi pengedit teks untuk membina sistem berasaskan PHP. Namun aplikasi Geany dipilih kerana ianya mempunyai ciri istimewa yang banyak membantu pengaturcaraan PHP dalam Linux. Aplikasi Vim pula dipilih untuk mengedit teks dalam sistem yang hanya mempunyai \ac{CLI} bagi mempermudahkan ubahsuai dan nyahralat dilakukan dengan cepat dalam pelayan.
+
+\item \textbf{Lighttpd}
+Pelayan web Lighttpd dipilih sebagai elemen utama yang akan melayan akses dan antaramuka web untuk sistem terbenam Linux kerana ianya lebih ringan dan saiznya yang lebih kecil daripada pelayan web popular lain seperti Apache dan sebagainya.
+
+\item \textbf{PHP}
+Modul Penterjemah PHP dipasang sebagai CGI dalam Lighttpd bagi membolehkan aplikasi yang ditulis menggunakan bahasa pengaturcaraan PHP dilarikan dalam pelayan web Lighttpd
+
+\item \textbf{Sqlite}
+Sqlite merupakan aplikasi pangkalan data yang kecil dan ringan. Ia dipilih untuk menyokong penggunaan pangkalan data dalam sistem ini. Aplikasi ini bersesuaian dengan aplikasi antaramuka web yang hanya menggunakan pangkalan data pada kadar minima.
+
+\item \textbf{VMware Player}
+Oleh kerana akses terhadap perkakasan sebenar melibatkan sambungan rangkaian dan beberapa perkakasan lain, adalah lebih wajar jika pembangunan aplikasi dilakukan dalam persekitaran simulasi dalam komputer pembangunan. Kaedah ini bukan sahaja menjimatkan masa, malah menjimatkan kos perkakasan dan tenaga elektrik.
+
+\end{enumerate}
+
 
 \section{Kesimpulan}
 Secara ringkasnya, bab ini menjelaskan setiap perincian kaedah penyelesaian yang diambil meliputi keperluan kepada perisian, perkakasan dan pendekatan metodologi yang digunakan semasa pembangunan aplikasi ini. Tujuan ianya dilakukan adalah sebagai suatu langkah mengenalpasti potensi dan peluang dalam penyelesaian masalah, menggariskan panduan sistematik kepada penyelesaian yang diambil, dan merencanakan rancangan dan fasa-fasa
